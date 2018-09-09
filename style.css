@@ -1,0 +1,26 @@
+.logo
+{
+    width: 100px;
+    height: 200px;
+}
+
+.imgLogo
+{   
+    align-content: center;  
+    text-align: center;
+}
+
+.shortSent
+{
+    text-align: center;
+}
+
+body
+{
+   font-family: "Andale Mono", monospace;
+}
+
+.modal-content
+{
+    background-color: red;
+}

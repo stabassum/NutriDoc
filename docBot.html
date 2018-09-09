@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Doc-Bot</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/botStyle.css">
+    </head>
+    
+    <body>
+    
+<!-- Trigger/Open The Modal -->
+<div style="text-align: right">
+<button id="myBtn">Log In</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>User Login</p>
+    <form action="">
+        <p>Account Type</p>
+            <input type="radio">Patient <br>
+            <input type="radio">Health Professional <br>
+            Username<input type="text" name="username"> <br>
+            Password<input type="password" name="psw"> <br>
+            <input type="submit" value="Sign In">
+            <button>Register</button>
+    </form>
+  </div>
+
+</div>
+                     </div>
+                      
+        <br>
+        <div class="imgLogo">
+        <img class="logo" src="img/logo.png" alt="logo">
+        </div>
+        <br>
+        
+              <!-- Chat Bot -->
+        <div style="text-align: center">
+            <p>Do you agree to the <a href="">Term & Conditions</a></p>
+        </div>
+        <form action="" style="text-align: center">
+            <input type="checkbox">Agree
+        </form>
+        <div style="text-align: center">
+        <button>Start Chat</button>
+        </div>
+        <br>
+ <div id='bodybox'>
+        <h3 style="text-align: center">DocBot</h3>
+  <div id='chatborder'>
+    <p id="chatlog7" class="chatlog">&nbsp;</p>
+    <p id="chatlog6" class="chatlog">&nbsp;</p>
+    <p id="chatlog5" class="chatlog">&nbsp;</p>
+    <p id="chatlog4" class="chatlog">&nbsp;</p>
+    <p id="chatlog3" class="chatlog">&nbsp;</p>
+    <p id="chatlog2" class="chatlog">&nbsp;</p>
+    <p id="chatlog1" class="chatlog">&nbsp;</p>
+    <input type="text" name="chat" id="chatbox" placeholder="Talk to a Doc! (30 Min Trial)" onfocus="placeHolder()">
+  </div>
+    </div>
+        
+       <script>
+                                // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }    
+
+        </script>
+       
+    </body>
+    
+</html>
